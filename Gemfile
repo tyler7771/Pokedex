@@ -28,7 +28,9 @@ gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development do
+group :production do
+  gem 'newrelic_rpm'
+  gem 'rails_12factor' # error feedback
   # Replace IRB with Pry
   gem 'pry-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -47,4 +49,3 @@ end
 group :development, :test do
   gem 'launchy'
 end
-
