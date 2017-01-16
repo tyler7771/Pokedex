@@ -7,8 +7,8 @@ const PokemonIndex = (props) => (
       {props.pokemon.map(poke => (
             <PokemonIndexItem key={poke.id} pokemon={poke} />
         ))}
-      {props.children}
     </ul>
+    {props.children}
   </section>
 );
 

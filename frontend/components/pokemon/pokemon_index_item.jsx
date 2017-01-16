@@ -7,7 +7,7 @@ const PokemonIndexItem = (props) => {
   return (
     <li className="pokemon-index-item"
         onClick={handleClick(`/pokemon/${props.pokemon.id}`)}>
-        {props.pokemon.name}
+        <p>{props.pokemon.name}</p>
         <img src={props.pokemon.image_url}></img>
     </li>);
 };
